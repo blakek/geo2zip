@@ -1,0 +1,24 @@
+{
+  "name": "geo2zip",
+  "version": "1.0.2",
+  "description": "Translates latitude / longitude geolocations to the nearest corresponding U.S. zip code",
+  "main": "index.js",
+  "repository": {
+    "url": "https://github.com/blakek/geo2zip",
+    "type": "git"
+  },
+  "author": "Blake Knight <oss.ideas@gmail.com> (http://blakek.me/)",
+  "license": "MIT",
+  "scripts": {
+    "lint": "standard --fix | snazzy",
+    "test": "npm run lint && ava"
+  },
+  "devDependencies": {
+    "ava": "^0.17.0",
+    "snazzy": "^5.0.0",
+    "standard": "^8.5.0"
+  },
+  "dependencies": {
+    "geolib": "^2.0.22"
+  }
+}
