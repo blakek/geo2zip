@@ -29,9 +29,9 @@ With [npm](https://npmjs.org/) installed, run
 $ npm install geo2zip
 ```
 
-## Acknowledgments
+## See Also
 
-Data for ZIP codes and their geolocations was generated from [this file](http://www2.census.gov/geo/docs/maps-data/data/gazetteer/2015_Gazetteer/2015_Gaz_zcta_national.zip), which can be downloaded from the [US Census Bureau site](http://www.census.gov/geo/maps-data/data/gazetteer2015.html).
+  * [`blakek/us-zips`](https://github.com/blakek/us-zips) - a list of US ZIP codes and their geolocations
 
 ## License
 

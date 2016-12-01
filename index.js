@@ -1,5 +1,5 @@
 const findNearest = require('geolib').findNearest
-const usZips = require('./zip-locations')
+const usZips = require('us-zips')
 
 const standardizeLocation = (location) => {
   const latitude = location.latitude || location.lat
