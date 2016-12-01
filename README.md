@@ -2,11 +2,13 @@
 
 > Translates latitude / longitude geolocations to the nearest corresponding U.S. zip code
 
-Takes a geolocation and returns the nearest US ZIP code
+Takes a geolocation and returns the nearest US ZIP code.
+
+⚠️ **NOTE:** this may not return the actual ZIP code of the location; it returns the ZIP code where the approximate center of the ZIP is nearest the location.
 
 ## Usage
 
-Let's do X:
+Get the nearest ZIP to a location:
 
 ```js
 const geo2zip = require('geo2zip')
