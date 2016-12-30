@@ -20,6 +20,7 @@
   },
   "dependencies": {
     "geolib": "^2.0.22",
+    "standardize-geolocation": "^2.0.1",
     "us-zips": "^1.0.0"
   }
 }
