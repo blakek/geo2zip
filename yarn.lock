@@ -1613,10 +1613,6 @@ generate-object-property@^1.1.0:
   dependencies:
     is-property "^1.0.0"
 
-geolib:
-  version "2.0.22"
-  resolved "https://registry.yarnpkg.com/geolib/-/geolib-2.0.22.tgz#d74e96ebea2e0049ef48077c1cd1214063e27200"
-
 get-port@^2.1.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/get-port/-/get-port-2.1.0.tgz#8783f9dcebd1eea495a334e1a6a251e78887ab1a"
@@ -2946,6 +2942,10 @@ spdx-expression-parse@~1.0.0:
 spdx-license-ids@^1.0.2:
   version "1.2.2"
   resolved "https://registry.yarnpkg.com/spdx-license-ids/-/spdx-license-ids-1.2.2.tgz#c9df7a3424594ade6bd11900d596696dc06bac57"
+
+sphere-knn:
+  version "1.3.1"
+  resolved "https://registry.yarnpkg.com/sphere-knn/-/sphere-knn-1.3.1.tgz#a73bc2a5e25a24e8a682427a119a56c422382af7"
 
 sprintf-js@~1.0.2:
   version "1.0.3"
