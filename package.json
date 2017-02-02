@@ -15,7 +15,7 @@
     "watch": "ava --watch"
   },
   "devDependencies": {
-    "ava": "^0.17.0",
+    "ava": "^0.18.0",
     "snazzy": "^6.0.0",
     "standard": "^8.5.0"
   },
