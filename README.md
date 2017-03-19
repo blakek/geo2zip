@@ -1,4 +1,4 @@
-# geo2zip [![Travis](https://img.shields.io/travis/blakek/geo2zip.svg)](https://travis-ci.org/blakek/geo2zip)
+# geo2zip [![Travis](https://img.shields.io/travis/blakek/geo2zip/master.svg)](https://travis-ci.org/blakek/geo2zip)
 
 > Translates latitude / longitude geolocations to the nearest corresponding U.S. zip code
 
