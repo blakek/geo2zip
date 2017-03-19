@@ -33,6 +33,7 @@ $ npm install geo2zip
 
 ## See Also
 
+  * [`blakek/standardize-geolocation`](https://github.com/blakek/standardize-geolocation) - takes geolocations of different formats and outputs a standardized version
   * [`blakek/us-zips`](https://github.com/blakek/us-zips) - a list of US ZIP codes and their geolocations
 
 ## License
