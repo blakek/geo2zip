@@ -7,8 +7,29 @@
     "url": "https://github.com/blakek/geo2zip",
     "type": "git"
   },
+  "keywords": [
+    "geolocation",
+    "latitude",
+    "longitude",
+    "lat",
+    "lon",
+    "long",
+    "location",
+    "zip",
+    "zipcode",
+    "knn",
+    "k-d",
+    "kd",
+    "tree"
+  ],
   "author": "Blake Knight <oss.ideas@gmail.com> (http://blakek.me/)",
+  "contributors": [
+    "Blake Knight <oss.ideas@gmail.com> (http://blakek.me/)"
+  ],
   "license": "MIT",
+  "engines": {
+    "node": ">=6.0.0"
+  },
   "scripts": {
     "lint": "standard --fix | snazzy",
     "test": "npm run lint && ava",
