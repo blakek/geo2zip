@@ -1,6 +1,6 @@
 {
   "name": "geo2zip",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "Translates latitude / longitude geolocations to the nearest corresponding U.S. zip code",
   "main": "index.js",
   "repository": {
