@@ -11,7 +11,7 @@ Takes a geolocation and returns the nearest US ZIP code.
 Get the nearest ZIP to a location:
 
 ```js
-const { geo2zip } = require('geo2zip')
+const geo2zip = require('geo2zip')
 
 const somewhere = {
   latitude: 34.659698,

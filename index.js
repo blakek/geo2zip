@@ -9,6 +9,4 @@ function geo2zip (rawLocation) {
   return Promise.resolve(lookup(latitude, longitude, 1)[0].zipCode)
 }
 
-module.exports = {
-  geo2zip
-}
+module.exports = geo2zip
