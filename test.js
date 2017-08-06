@@ -1,5 +1,5 @@
 import test from 'ava'
-import { geo2zip } from '.'
+import geo2zip from '.'
 
 test('returns zip code from same geolocation', async t => {
   const exactly38873 = {
