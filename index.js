@@ -1,12 +1,8 @@
 const sphereKnn = require('sphere-knn')
 const { standardizeGeolocation } = require('standardize-geolocation')
-const usZips = require('us-zips')
+const usZips = require('us-zips/array')
 
-const cleanedPoints = Object
-  .keys(usZips)
-  .map(zipCode => Object.assign(usZips[zipCode], { zipCode }))
-
-const lookup = sphereKnn(cleanedPoints)
+const lookup = sphereKnn(usZips)
 
 function geo2zip (rawLocation) {
   const { latitude, longitude } = standardizeGeolocation(rawLocation)
