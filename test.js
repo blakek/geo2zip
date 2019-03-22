@@ -1,24 +1,42 @@
 import test from 'ava'
 import geo2zip from '.'
 
-test('returns zip code from same geolocation', async t => {
-  const exactly38873 = {
-    latitude: 34.659698,
-    longitude: -88.242903
-  }
+test('returns zip code nearest a geolocation', async t => {
+  const testPoints = [
+    {
+      expected: '38873',
+      location: { latitude: 34.659698, longitude: -88.242903 }
+    },
+    {
+      expected: '37076',
+      location: { latitude: 36.142226, longitude: -86.618779 }
+    }
+  ]
 
-  const zip = await geo2zip(exactly38873)
+  const tests = testPoints.map(async ({ expected, location }) => {
+    const actual = await geo2zip(location)
+    t.is(actual[0], expected)
+  })
 
-  t.is(zip, '38873')
+  return Promise.all(tests)
 })
 
-test('returns nearest zip code for geolocation', async t => {
-  const near37076 = {
-    latitude: 36.142226,
-    longitude: -86.618779
-  }
+test('returns a list of zip codes nearest a location, ordered by closeness', async t => {
+  const testPoints = [
+    {
+      expected: '38859',
+      location: { latitude: 34.659698, longitude: -88.242903 }
+    },
+    {
+      expected: '37214',
+      location: { latitude: 36.1432503, longitude: -86.6202267 }
+    }
+  ]
 
-  const zip = await geo2zip(near37076)
+  const tests = testPoints.map(async ({ expected, location }) => {
+    const actual = await geo2zip(location, { limit: 5 })
+    t.true(actual.includes(expected))
+  })
 
-  t.is(zip, '37076')
+  return Promise.all(tests)
 })
