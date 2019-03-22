@@ -4038,10 +4038,10 @@ url-parse-lax@^1.0.0:
   dependencies:
     prepend-http "^1.0.1"
 
-us-zips@^2.0.2:
-  version "2.0.2"
-  resolved "https://registry.yarnpkg.com/us-zips/-/us-zips-2.0.2.tgz#778ec134e0f18c706b1fe99b743efcc54d41bede"
-  integrity sha512-BFrlG8TC8j9CJz6QoaanNLEDhVXeUvXIdSFcWohX38YcDyebJU9qM7M0LEsKN1WZQNO9U/xZY8TtfAp3hsEiig==
+us-zips@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/us-zips/-/us-zips-3.0.0.tgz#ca8ef018e2413f4527cc114e94ccd2b94178d9f3"
+  integrity sha512-p92viNyVE4eY7vAW93r/TBI1niaZZ0AXHBLjUrwWIpILKE5zWyPy/y4I8eRQvSUwlZBzogS5uNv4Cpi192urdQ==
 
 use@^3.1.0:
   version "3.1.1"
