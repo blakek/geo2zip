@@ -7,9 +7,9 @@
     "url": "https://github.com/blakek/geo2zip",
     "type": "git"
   },
-  "author": "Blake Knight <oss.ideas@gmail.com> (http://blakek.me/)",
+  "author": "Blake Knight <oss.ideas@gmail.com> (https://blakek.me/)",
   "contributors": [
-    "Blake Knight <oss.ideas@gmail.com> (http://blakek.me/)"
+    "Blake Knight <oss.ideas@gmail.com> (https://blakek.me/)"
   ],
   "engines": {
     "node": ">=8.6.0"
