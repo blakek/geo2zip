@@ -34,16 +34,16 @@
   ],
   "license": "MIT",
   "scripts": {
-    "lint": "standard --fix | snazzy",
+    "format-check": "amper-scripts format-check *.js",
+    "lint": "amper-scripts lint *.js",
     "test": "ava",
-    "verify": "run-p -l lint test",
+    "validate": "run-s test format-check lint",
     "watch": "ava --watch"
   },
   "devDependencies": {
-    "ava": "^2.1.0",
-    "npm-run-all": "^4.1.5",
-    "snazzy": "^8.0.0",
-    "standard": "^14.3.1"
+    "amper-scripts": "^1.0.0-0",
+    "ava": "^3.3.0",
+    "npm-run-all": "^4.1.5"
   },
   "dependencies": {
     "sphere-knn": "^1.4.0",
