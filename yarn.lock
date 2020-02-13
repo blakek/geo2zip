@@ -3523,9 +3523,9 @@ url-parse-lax@^3.0.0:
     prepend-http "^2.0.0"
 
 us-zips@^4.0.0:
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/us-zips/-/us-zips-4.0.0.tgz#7ff38861f45a975d6815ba0ce951ddd8768760ba"
-  integrity sha512-PT6KCQBF/WHTpLWqX6D65eHeQteJ5l4WaxcjXQrkUkMMNNny13ZHFG2lE2cTF06hdNWO5YQWOmc98lWESpvvjQ==
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/us-zips/-/us-zips-4.0.1.tgz#d70236dbeeb7b5845f21b28c873f26cca6f4f8d6"
+  integrity sha512-QWyq57ex4l8UiIycfUe0KUrpd+kzZ7hOl3JmA0R30D1wCMzO7TqITNoJtLmjTihQIGtW/KRL3l44XZ0jf4McYg==
 
 util-deprecate@^1.0.1:
   version "1.0.2"
