@@ -68,5 +68,8 @@
     "sphere-knn": "^1.4.0",
     "standardize-geolocation": "^4.0.0",
     "us-zips": "^2021.11.4"
+  },
+  "resolutions": {
+    "ansi-regex": "^5.0.1"
   }
 }
