@@ -67,6 +67,6 @@
   "dependencies": {
     "sphere-knn": "^1.4.0",
     "standardize-geolocation": "^4.0.0",
-    "us-zips": "^2021.11.3"
+    "us-zips": "^2021.11.4"
   }
 }
