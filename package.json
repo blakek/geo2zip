@@ -1,8 +1,8 @@
 {
   "name": "geo2zip",
-  "version": "2.0.2",
+  "version": "3.0.0",
   "description": "Translates latitude / longitude geolocations to the nearest corresponding U.S. zip code",
-  "main": "index.js",
+  "main": "dist/index.js",
   "repository": {
     "url": "https://github.com/blakek/geo2zip",
     "type": "git"
@@ -33,21 +33,40 @@
     "neighbors"
   ],
   "license": "MIT",
+  "ava": {
+    "extensions": [
+      "js",
+      "ts"
+    ],
+    "files": [
+      "src/**/*.test.ts"
+    ],
+    "ignoredByWatcher": [
+      "!src/**"
+    ],
+    "require": [
+      "ts-node/register"
+    ]
+  },
   "scripts": {
+    "build": "tsc",
     "format-check": "amper-scripts format-check *.js",
     "lint": "amper-scripts lint *.js",
+    "prepack": "run-s build",
     "test": "ava",
     "validate": "run-s test format-check lint",
     "watch": "ava --watch"
   },
   "devDependencies": {
-    "amper-scripts": "^1.0.0-0",
-    "ava": "^3.3.0",
-    "npm-run-all": "^4.1.5"
+    "amper-scripts": "^1.2.4",
+    "ava": "^3.15.0",
+    "npm-run-all": "^4.1.5",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.4.4"
   },
   "dependencies": {
     "sphere-knn": "^1.4.0",
-    "standardize-geolocation": "^2.0.2",
-    "us-zips": "^4.0.0"
+    "standardize-geolocation": "^4.0.0",
+    "us-zips": "^2021.11.4"
   }
 }

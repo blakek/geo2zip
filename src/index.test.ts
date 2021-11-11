@@ -1,5 +1,5 @@
-const test = require('ava');
-const geo2zip = require('.');
+import test from 'ava';
+import geo2zip from '.';
 
 test('returns zip code nearest a geolocation', async t => {
   const testPoints = [
@@ -13,12 +13,10 @@ test('returns zip code nearest a geolocation', async t => {
     }
   ];
 
-  const tests = testPoints.map(async ({ expected, location }) => {
-    const actual = await geo2zip(location);
-    t.is(actual[0], expected);
-  });
-
-  return Promise.all(tests);
+  for (const { expected, location } of testPoints) {
+    const [actual] = await geo2zip(location);
+    t.is(actual, expected);
+  }
 });
 
 test('returns a list of zip codes nearest a location, ordered by closeness', async t => {
@@ -33,10 +31,8 @@ test('returns a list of zip codes nearest a location, ordered by closeness', asy
     }
   ];
 
-  const tests = testPoints.map(async ({ expected, location }) => {
+  for (const { expected, location } of testPoints) {
     const actual = await geo2zip(location, { limit: 5 });
     t.true(actual.includes(expected));
-  });
-
-  return Promise.all(tests);
+  }
 });
