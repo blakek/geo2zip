@@ -50,8 +50,9 @@
   },
   "scripts": {
     "build": "tsc",
-    "format-check": "amper-scripts format-check *.js",
-    "lint": "amper-scripts lint *.js",
+    "format": "amper-scripts format-write .",
+    "format-check": "amper-scripts format-check .",
+    "lint": "amper-scripts lint .",
     "prepack": "run-s build",
     "test": "ava",
     "validate": "run-s test format-check lint",
