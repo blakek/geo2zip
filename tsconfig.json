@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
     "allowSyntheticDefaultImports": true,
+    "baseUrl": ".",
     "declaration": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
@@ -8,6 +9,9 @@
     "module": "CommonJS",
     "moduleResolution": "Node",
     "outDir": "dist",
+    "paths": {
+      "*": ["node_modules/*", "src/types/*"]
+    },
     "rootDir": "./src",
     "sourceMap": true,
     "strict": true,

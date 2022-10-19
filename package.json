@@ -56,7 +56,7 @@
     "prepack": "run-s build",
     "test": "ava",
     "typecheck": "tsc --noEmit",
-    "validate": "run-s -l test typecheck format-check lint",
+    "validate": "run-s -l typecheck test format-check lint",
     "watch": "ava --watch"
   },
   "devDependencies": {
