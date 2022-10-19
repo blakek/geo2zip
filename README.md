@@ -47,11 +47,11 @@ npm install geo2zip
 Get the nearest ZIP to a location:
 
 ```js
-import geo2zip from 'geo2zip';
+import geo2zip from "geo2zip";
 
 const location = {
   latitude: 34.659698,
-  longitude: -88.242903
+  longitude: -88.242903,
 };
 
 const closestZip = await geo2zip(location);
@@ -62,11 +62,11 @@ console.log(closestZip); // ['38873']
 Get the closest 5 ZIPs to a location:
 
 ```js
-import geo2zip from 'geo2zip';
+import geo2zip from "geo2zip";
 
 const location = {
   latitude: 34.659698,
-  longitude: -88.242903
+  longitude: -88.242903,
 };
 
 await geo2zip(location, { limit: 5 });

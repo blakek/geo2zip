@@ -10,10 +10,10 @@ jobs:
       fail-fast: true
       matrix:
         node_version:
-          - '12'
-          - '14'
-          - '16'
-          - '17'
+          - "12"
+          - "14"
+          - "16"
+          - "17"
 
     steps:
       - uses: actions/checkout@v2
@@ -22,7 +22,7 @@ jobs:
         name: Use Node.js v${{matrix.node_version}}
         with:
           node-version: ${{matrix.node_version}}
-          cache: 'yarn'
+          cache: "yarn"
 
       - run: yarn install
 
