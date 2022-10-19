@@ -1,4 +1,4 @@
-declare module 'sphere-knn' {
+declare module "sphere-knn" {
   type WithLatitude = { lat: number } | { latitude: number };
 
   type WithLongitude =
@@ -11,7 +11,7 @@ declare module 'sphere-knn' {
     | [number, number]
     | { location: [number, number] }
     | { position: [number, number] }
-    | { geometry: { coordinates: [number, number]; type: 'Point' } }
+    | { geometry: { coordinates: [number, number]; type: "Point" } }
     | (WithLatitude & WithLongitude);
 
   type Lookup = (

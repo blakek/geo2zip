@@ -1,5 +1,6 @@
 # Compiled/built project
 dist
+*.tsbuildinfo
 
 # Testing output
 .nyc_output

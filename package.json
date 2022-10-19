@@ -50,26 +50,25 @@
   },
   "scripts": {
     "build": "tsc",
-    "format-check": "amper-scripts format-check *.js",
-    "lint": "amper-scripts lint *.js",
+    "format": "amper-scripts format-write .",
+    "format-check": "amper-scripts format-check .",
+    "lint": "amper-scripts lint .",
     "prepack": "run-s build",
     "test": "ava",
-    "validate": "run-s test format-check lint",
+    "typecheck": "tsc --noEmit",
+    "validate": "run-s -l typecheck test format-check lint",
     "watch": "ava --watch"
   },
   "devDependencies": {
     "amper-scripts": "^1.2.4",
-    "ava": "^3.15.0",
+    "ava": "^4.3.3",
     "npm-run-all": "^4.1.5",
-    "ts-node": "^10.4.0",
-    "typescript": "^4.4.4"
+    "ts-node": "^10.9.1",
+    "typescript": "^4.8.4"
   },
   "dependencies": {
     "sphere-knn": "^1.4.0",
-    "standardize-geolocation": "^4.0.0",
+    "standardize-geolocation": "^4.0.1",
     "us-zips": "^2021.11.4"
-  },
-  "resolutions": {
-    "ansi-regex": "^5.0.1"
   }
 }

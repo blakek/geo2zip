@@ -1,10 +1,10 @@
-import sphereKnn from 'sphere-knn';
+import sphereKnn from "sphere-knn";
 import {
   GeolocationInput,
-  standardizeGeolocation
-} from 'standardize-geolocation';
-import { ZIPCode } from 'us-zips';
-import usZips, { ZIPCodeList } from 'us-zips/array';
+  standardizeGeolocation,
+} from "standardize-geolocation";
+import { ZIPCode } from "us-zips";
+import usZips, { ZIPCodeList } from "us-zips/array";
 
 export interface Options {
   limit: number;
@@ -25,7 +25,7 @@ export function geo2zip(
   const options = { ...defaultOptions, ...extraOptions };
   const { latitude, longitude } = standardizeGeolocation(location);
 
-  return new Promise(resolve => {
+  return new Promise((resolve) => {
     const results = lookup(latitude, longitude, options.limit) as ZIPCodeList;
 
     resolve(results.map(pluckZipCode));
