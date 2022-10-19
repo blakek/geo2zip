@@ -55,7 +55,8 @@
     "lint": "amper-scripts lint .",
     "prepack": "run-s build",
     "test": "ava",
-    "validate": "run-s test format-check lint",
+    "typecheck": "tsc --noEmit",
+    "validate": "run-s -l test typecheck format-check lint",
     "watch": "ava --watch"
   },
   "devDependencies": {
